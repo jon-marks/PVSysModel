@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17cca9f1-ce10-44b6-82a9-316ee9cb5f9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PVPlant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/Timeseries_-23.090_29.450_SA2_0deg_0deg_2005_2005.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/Timeseries_-26.566_28.014_SA2_0deg_0deg_2005_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/sol_avg_-26.566_28.014_1471.0.cvs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/sol_clr_-26.556_28.014_1471.0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/sol_tmy_-26.566_28.014_1471.0.cvs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Thomas_Tyres_-26.556_28.014_1471.0/tmy_-26.566_28.014_2005_2020.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/de440s.bsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/copyright" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/doctrees/01-introduction.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/.buildinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/01-introduction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/AIM.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/AIM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/debug.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/doctools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/documentation_options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/language_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/pygments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/scripts/furo-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/scripts/furo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/scripts/furo.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/scripts/furo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/searchtools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/skeleton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/sphinx_highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/styles/furo-extensions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/styles/furo-extensions.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/styles/furo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/styles/furo.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/_static/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/genindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/objects.inv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build/html/searchindex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/make.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/01-introduction.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/_ext/table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/_static/overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/_static/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/globals.inc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/images/.~lock.PVPlant-scope.odg#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/images/AIM.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/images/AIM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/images/PVPlant-scope.odg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/images/PVPlant-scope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compute-position-of-sunthe-skypython-using-skyfield.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sol_cvs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sol_cvs_test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/Scripts/rst2odt.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2aqv3WloAej7PB6y1RJE0jS05ha" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.make docs.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jm/Dropbox/Work/PVPlant&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="PVPlant" />
+      <selectedOptions>
+        <option name="py.interpreter.options" />
+      </selectedOptions>
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (SolSys)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make docs" type="PythonConfigurationType" factoryName="Python">
+      <module name="PVPlant" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\jm\Dropbox\Work\PVPlant\docs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/make.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17cca9f1-ce10-44b6-82a9-316ee9cb5f9c" name="Changes" comment="" />
+      <created>1705058724880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705058724880</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.rst" />
+  </component>
+</project>

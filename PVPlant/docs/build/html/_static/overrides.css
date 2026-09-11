@@ -1,0 +1,71 @@
+div.body p, div.body dd, div.body li, div.body blockquote {
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+
+figcaption {
+      text-align: center;
+}
+
+.legend {
+   overflow-x: scroll;
+   white-space: nowrap;
+   line-height: 16px;
+   font-size: 75%;
+}
+
+figcaption p {
+   margin-top: 4px;
+   margin-bottom: 4px
+}
+
+.legend p {
+   margin-top: 0px;
+   margin-bottom: 4px
+}
+
+uline, .underline {
+   text-decoration: underline;
+}
+
+wuline, .wavy-underline {
+   text-decoration: underline wavy;
+}
+
+duline, .dashed_underline {
+    text-decoration: underline dashed;
+}
+
+oline, .overline {
+   text-decoration: overline;
+}
+
+mline, strike, .strike {
+   text-decoration: line-through;
+}
+
+ital, .italic {
+   font-style: italic;
+}
+
+mono, .mono {
+   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+   overflow-x: scroll;
+}
+
+mong, .mong {
+   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+   background-color: #eee;
+   overflow-x: scroll;
+}
+
+li.toctree-l1, li.toctree-l2, li.toctree-l3, li.toctree-l4, li.toctree-l5 {
+   list-style-type: none;
+}
+
+
+a[href ^= "http"]:after {
+   content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}

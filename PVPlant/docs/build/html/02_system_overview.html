@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="3. Input Information" href="03_input_information/index.html" /><link rel="prev" title="1. Introduction" href="01_introduction.html" />
+
+    <link rel="shortcut icon" href="_static/AIM.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>PVPlant | System Overview</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="stylesheet" type="text/css" href="_static/overrides.css?v=091ca5f1" />
+    <link rel="stylesheet" type="text/css" href="_static/table.css?v=42f7f4fa" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">PVPlant</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/AIM.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">PVPlant</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">1. Introduction</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">2. System Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="03_input_information/index.html">3. Input Information</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of 3. Input Information</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/01_weather_data.html">3.1. Weather Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/02_energy_consumption_records.html">3.2. Energy Consumption Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/03_energy_billing_records.html">3.3. Energy Billing Records</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/04_energy_rates.html">3.4. Energy Rates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/05_proposed_pvs_parameters.html">3.5. Proposed PV System Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/06_proposed_ess_parameters.html">3.6. Proposed ESS Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/07_proposed_ems_parameters.html">3.7. Proposed EMS Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/08_proposed_genset_parameters.html">3.8. Proposed Genset Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/09_proposed_pvplant_capex.html">3.9. Proposed PV Plant Capex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/10_proposed_pvplant_opex.html">3.10. Proposed PV Plant Opex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/11_projected_energy_consumption.html">3.11. Projected Energy Consumption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/12_projected_supply_outages.html">3.12. Projected Supply Outages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_input_information/13_projected_financial_parameters.html">3.13. Projected Financial Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="04_intermediate_information/index.html">4. Intermediate Information</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of 4. Intermediate Information</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/01_weather.html">4.1. Weather</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/02_solar_energy.html">4.2. Solar Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/03_grid_energy.html">4.3. Grid Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/04_storage_energy.html">4.4. Storage Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/05_genset_energy.html">4.5. Genset Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/06_energy_costs.html">4.6. Energy Costs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/07_grid_outages.html">4.7. Grid Outages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/08_load_demand.html">4.8. Load Demand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/09_load_energy.html">4.9. Load Energy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_intermediate_information/10_load_energy_costs.html">4.10. Load Energy Costs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="05_system_models/index.html">5. System Models</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of 5. System Models</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/01_weather.html">5.1. Weather Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/02_pcc.html">5.2. Projected Consumption Costing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/03_pv_system.html">5.3. PV System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/04_genset.html">5.4. Genset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/05_ess.html">5.5. Energy Storage System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/06_ems.html">5.6. Energy Management System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_system_models/07_fiscal_model.html">5.7. Fiscal Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_fiscal_projections.html">6. Fiscal Projections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_glossary.html">7. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_references.html">8. References</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="A1_data_specifications/index.html">1. Data Specifications</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="system-overview">
+<span id="id1"></span><h1><span class="section-number">2. </span>System Overview<a class="headerlink" href="#system-overview" title="Link to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As PVPlant is initially a South African product intended for a South African market.
+International readers may find this information South Africa centric, which may not be fully
+applicable to other localities.  It is my intention to first focus on South Africa, before
+looking further afield.  That said, I am receptive to collaborative contributions that
+incorporate other localities while I focus on South Africa.</p>
+</div>
+<p>PVPlant system overview is illustrated in <a class="reference internal" href="#fig-pvplant-scope"><span class="std std-numref">Figure 2.1: </span></a>.</p>
+<figure class="align-center" id="fig-pvplant-scope">
+<a class="reference internal image-reference" href="_images/PVPlant_scope.jpg"><img alt="PV Plant Tool Scope" src="_images/PVPlant_scope.jpg" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Figure 2.1:  </span><span class="caption-text">PV Plant Tool Scope</span><a class="headerlink" href="#fig-pvplant-scope" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The PVPlant tools accepts information as inputs that is processed through models creating
+intermediate data, which in turn is processed through other models to ultimately arrive at Fiscal
+Projections, the resulting output data.</p>
+<section id="pvplant-components">
+<h2><span class="section-number">2.1. </span>PVPlant Components<a class="headerlink" href="#pvplant-components" title="Link to this heading">#</a></h2>
+<section id="weather-model">
+<h3><span class="section-number">2.1.1. </span>Weather Model<a class="headerlink" href="#weather-model" title="Link to this heading">#</a></h3>
+<p>The weather model accepts location weather records which are available from various sources, and
+produces time-series Weather Data profile that is processed by the PV System Model can process.</p>
+</section>
+<section id="projected-consumption-costing-model">
+<h3><span class="section-number">2.1.2. </span>Projected Consumption Costing Model<a class="headerlink" href="#projected-consumption-costing-model" title="Link to this heading">#</a></h3>
+<p>A forward-looking Load Demand profile for the following year is generated from historical energy
+consumption records coupled with
+<a class="reference internal" href="03_input_information/11_projected_energy_consumption.html#inp-projected-energy-consumption"><span class="std std-ref">Projected Energy Consumption</span></a> information.</p>
+<dl class="simple">
+<dt>A prediction of anticipated load-shedding is translated into a Grid Outage profile for the following</dt><dd><p>year</p>
+</dd>
+</dl>
+<p>Historical billing records, together with current Energy Rates and anticipated changes are used
+to generate an Energy Cost profile for the following year</p>
+<p>The Load Demand, Grid Outage and Energy Cost profiles are inputs to the <a class="reference internal" href="07_glossary.html#term-EMS"><span class="xref std std-term">EMS</span></a> Model</p>
+<p>The PCC model projection range is typically a fiscal year.  Energy consumption and costs include
+both electricity and fossil fuel.</p>
+</section>
+<section id="pv-system-model">
+<h3><span class="section-number">2.1.3. </span>PV System Model<a class="headerlink" href="#pv-system-model" title="Link to this heading">#</a></h3>
+<p>The PV system model uses a Weather Data profile to predicts solar energy output of a PV system.  The
+generated Solar Energy profile is an input to the <a class="reference internal" href="07_glossary.html#term-EMS"><span class="xref std std-term">EMS</span></a> Model.</p>
+<p>This model characterises the interaction and performance of all the components in a PV Systems
+taking into account their efficiencies and losses.</p>
+</section>
+<section id="genset-model">
+<h3><span class="section-number">2.1.4. </span>Genset Model<a class="headerlink" href="#genset-model" title="Link to this heading">#</a></h3>
+<p>The Genset specification is used by the Genset Model to generate a Genset Energy Profile useful to
+the <a class="reference internal" href="07_glossary.html#term-EMS"><span class="xref std std-term">EMS</span></a> Model.</p>
+<p>This profile associates fuel consumption with energy production, characterising the efficiencies and
+losses of the Genset.</p>
+</section>
+<section id="energy-storage-system-model">
+<h3><span class="section-number">2.1.5. </span>Energy Storage System Model<a class="headerlink" href="#energy-storage-system-model" title="Link to this heading">#</a></h3>
+<p>The Energy Storage System (ESS) Model characterises the charging and discharging capacity, rates
+efficiencies, losses of a the energy storage device (typically batteries), together with the
+components that transform energy to and from the form compatible with the storage device.</p>
+<p>An ESS can be charging, discharging or static.  It cannot be both charging or discharging.</p>
+<p>This Model iterates in lockstep with the EMS model.  For each time step iteration, the EMS Model
+senses the Battery level, which it factors into its calculations to decide how much Storage Energy
+to take from or give to the ESS Model.  The ESS Model computes the Charge Energy that actually gets
+stored or drawn and adjusts the battery level accordingly for the next lockstep iteration.</p>
+</section>
+<section id="energy-management-system-model">
+<h3><span class="section-number">2.1.6. </span>Energy Management System Model<a class="headerlink" href="#energy-management-system-model" title="Link to this heading">#</a></h3>
+<p>The Energy Management System (EMS) Model iterates over every time interval.  From the inputs
+for every time interval, based on energy cost and availability for that time, it computes the
+amount of energy to take from each energy source to satisfy Load Demand, charge batteries or
+export back to the grid.</p>
+<p>This way the EMS manages power from the Genset when there are extensive outages, holds sufficient
+ESS charge to carry over load-shedding outages, and sufficient ESS charge to supplement Load Demand
+peaks. All the while maximising Solar energy utilisation as much as possible.  How the EMS
+manages this is governed by the parameters in the EMS specification.</p>
+<p>The EMS Model produces a Load Energy profile.  This profile contains the amount of energy drawn from
+or exported to each Energy source.  Accompanying this profile is a Load Energy Cost profile.  These
+two profiles are useful to the Fiscal Model.  These profiles cover the first full year of PV Plant
+operation.</p>
+</section>
+<section id="fiscal-model">
+<h3><span class="section-number">2.1.7. </span>Fiscal Model<a class="headerlink" href="#fiscal-model" title="Link to this heading">#</a></h3>
+<p>The Fiscal model uses the Load Energy and associated costs to calculate a time-series cost of energy
+production.  This information is compared with the cost of Load Demand supplied totally from grid
+and existing genset, or estimated costs associated with outages.  This information is further
+processed against PV Plant CapEx and OpEx, and projected financial parameters to produce a
+cost and saving financial profile for the first year of operation.</p>
+<p>Then with financial projections such as inflation rate, interest rates, energy supply cost
+escalations, component deterioration, etc. the annual numbers are projected for the lifetime of
+the PV Plant, from which financial management information is distilled which is useful in assessing
+the viability and return on investing in a the PV Plant.</p>
+</section>
+</section>
+<section id="pvplant-information">
+<h2><span class="section-number">2.2. </span>PVPlant Information<a class="headerlink" href="#pvplant-information" title="Link to this heading">#</a></h2>
+<section id="pvplant-time-base">
+<h3><span class="section-number">2.2.1. </span>PVPlant Time Base<a class="headerlink" href="#pvplant-time-base" title="Link to this heading">#</a></h3>
+<p>A single time base for intermediate and final time-series data, keeps data consistent, makes this
+information easier to follow and simplifies implementation of PVPlant.</p>
+<p>PVPlant’s time base is half-hourly over a non-leap year from 1 Jan, 00:00 to 31 Dec, 23:00.  That is
+17,520 records long.</p>
+<p>Working consistently with energies and not mixing power and energy information further simplifies
+impolemenation.  The consistency makes the intermediate information easier to follow.</p>
+<p>PVPlant processes input time-series information as follows:</p>
+<ul class="simple">
+<li><p>Information is scaled or interpolated to the 1/2 hourly time base</p></li>
+<li><p>All instantaneous power measurements are converted to their energy equivalent for the
+period.  The energy value of a time step record is that energy between this time step and the
+next.</p></li>
+<li><p>All input energy measurements need to be shifted and recalculated to be between this time step
+and the next.  Some records list energy values where:</p>
+<ul>
+<li><p>The energy in a time step period, equi-distant about the time step, or</p></li>
+<li><p>The energy between the previous time step and this.</p></li>
+</ul>
+</li>
+<li><p>All instantaneous information like wind-speed or ambient temperature that PV Plant processes
+is recalculated as the average wind speed between this time step and the next, which more
+accurately represents the average value over the period representing the energy.</p></li>
+<li><p>All calculated non-linear information like azimuth and apparent elevation of the sun is
+done at the mid-point between this time step and the next to more accurately align its
+value with the energy values for the period.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="03_input_information/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><span class="section-number">3. </span>Input Information</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="01_introduction.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title"><span class="section-number">1. </span>Introduction</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, Jonathan Marks
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">2. System Overview</a><ul>
+<li><a class="reference internal" href="#pvplant-components">2.1. PVPlant Components</a><ul>
+<li><a class="reference internal" href="#weather-model">2.1.1. Weather Model</a></li>
+<li><a class="reference internal" href="#projected-consumption-costing-model">2.1.2. Projected Consumption Costing Model</a></li>
+<li><a class="reference internal" href="#pv-system-model">2.1.3. PV System Model</a></li>
+<li><a class="reference internal" href="#genset-model">2.1.4. Genset Model</a></li>
+<li><a class="reference internal" href="#energy-storage-system-model">2.1.5. Energy Storage System Model</a></li>
+<li><a class="reference internal" href="#energy-management-system-model">2.1.6. Energy Management System Model</a></li>
+<li><a class="reference internal" href="#fiscal-model">2.1.7. Fiscal Model</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pvplant-information">2.2. PVPlant Information</a><ul>
+<li><a class="reference internal" href="#pvplant-time-base">2.2.1. PVPlant Time Base</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=607a09ed"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    </body>
+</html>
