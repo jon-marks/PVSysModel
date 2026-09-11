@@ -1,0 +1,25 @@
+Notes:
+******
+
+1.    Use 1/2 hour intervals.  Natural from ecWIN and Pnpscada.  Interpolate
+      hourly production data from hourly to half hourly.
+
+2.    Model is all about commercial impact - finding the utility electricity and generator fuel
+      operating costs to run the plant.  In grid tied topologies.
+
+   LOAD	UTIL	PV	BATT	GEN
+2  1	0	0	0	1	Load = Gen – off grid with no renewable mitigation – not modelled trivial feed through – no commercial benefit
+4	1	0	0	1	0	Nonsense – no way to charge battery
+6	1	0	0	1	1	Possible but not sensible – battery offers no benefit to situation – not modelled, no commercial benefit
+8	1	0	1	0	0	Load only powered when sun shines, example farming irrigation – not modelled.  How to quantify commercial benefit.
+10	1	0	1	0	1	Load = PV + Gen – simple off tied – PV offset diesel charges – commercial benefit
+12	1	0	1	1	0	Load = PV + Batt – offgrid but no backup when no sun and battery discharged – not modelled, similar to #8 – how to quantify commercial benefit?
+14	1	0	1	1	1	Load = PV + Batt + Gen – Typical comprehensive off grid scenario, gen is backup when battery gets fully discharged.
+1	1	1	0	0	0	Load = Util no renewable mitigation – commercial baseline, so modelled.
+3	1	1	0	0	1	Load = Gen + Util – On Util outage generator as backup – no renewable mitigation – not modelled, no commercial benefit
+5	1	1	0	1	0	Load = Batt +  Util  - On Util outage battery discharges covering outage – not modelled, no commercial benefit
+7	1	1	0	1	1	Load = Batt + Gen + Utility  - On Util outage battery discharges before genset engages, batt charges with util.energy – commercial benefit – batt can offset diesel charges
+9	1	1	1	0	0	Load = PV + Util – simple grid tied – PV offset utility charges – commercial benefit
+11	1	1	1	0	1	Load = PV + Gen + Util – grid tied pv offset utility and diesel charges when outage – suboption PV / Gen energy managed or not
+13	1	1	1	1	0	Load = PV + Batt + Utility – Typical comprehensive Hybrid config – PV offset util and charges battery, Battery used as backup and tou arbitrage
+15	1	1	1	1	1	Load = PV + Batt + Gen + Util – same as 13 with genset backup – for situations where power always needed – sub-option PV / Gen energy managed or not.
